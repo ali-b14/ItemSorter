@@ -12,11 +12,6 @@ public class IdComparator implements Comparator<Item> {
 
     @Override
     public int compare(Item o1, Item o2) {
-        return compare(o1, o2);
-    }
-
-    @Override
-    public Comparator<Item> reversed() {
-        return Comparator.super.reversed();
+        return o1.getId().compareTo(o2.getId());
     }
 }
