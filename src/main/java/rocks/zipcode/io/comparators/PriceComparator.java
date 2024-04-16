@@ -12,9 +12,4 @@ public class PriceComparator implements Comparator<Item> {
     public int compare(Item o1, Item o2) {
         return 0;
     }
-
-    @Override
-    public Comparator<Item> reversed() {
-        return Comparator.super.reversed();
-    }
 }
